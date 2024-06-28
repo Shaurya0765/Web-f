@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenatal Nurture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Features</a>
+                        <div class="dropdown-content">
+                            <a href="#exercise">Exercise Routines</a>
+                            <a href="guidance.html">Nutritional Guidance</a>
+                            <a href="appointment.html">Appointment Reminders</a>
+                            <a href="#do-donts">Do's and Don'ts</a>
+                        </div>
+                    </li>
+                    <li><a href="#About us">About Us</a></li>
+                    <li><a href="#Contact us">Contact Us</a></li>
+                    <li><a href="#locator">Nearby Gynecologist</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+<main>
+    <!-- Custom image section -->
+    <section id="custom-image">
+    <div class="container">
+        <div class="welcome-box" id="Home">
+            <h2>Pregnancy is a life changing journey!</h2>
+            <p>Enjoy this journey with nurturing yourself and self care.</p>
+        </div>
+        <div class="image-wrapper">
+            <img src="custom_image.jpg" alt="Custom Image" class="fade-in-image">
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Rest of the sections -->
+    
+
+
+<section id="exercise">
+    <div class="container">
+        <div class="exercise pregnancy-routine">    
+            <div class="pink-box">
+                <h2>Pregnancy Exercise Routines</h2>
+            </div>
+        </div>
+        <div class="exercise">
+            <img src="Cardiovascular.jpg" alt="Cardiovascular Exercise">
+            <h3>Cardiovascular Exercise</h3>
+            <p>Aerobic exercises like walking, swimming, or cycling can improve heart health and stamina.</p>
+            <a href="Cardiovascular Exercise.html" target="_blank">Learn More</a>
+        </div>
+        <div class="exercise">
+            <img src="strength.jpg" alt="Strength Training">
+            <h3>Strength Training</h3>
+            <p>Strength exercises using body weight or light weights help maintain muscle strength and tone.</p>
+            <a href="strength.html" target="_blank">Learn More</a>
+        </div>
+        <div class="exercise">
+            <img src="flex.jpg" alt="Flexibility and Stretching">
+            <h3>Flexibility and Stretching</h3>
+            <p>Include gentle stretches to improve flexibility and reduce muscle tension. Focus on stretching major muscle groups such as your hamstrings, quadriceps, calves, chest, back, and shoulders. </p>
+            <a href="flexiblity.html" target="_blank">Learn More</a>
+        </div>
+        <div class="exercise">
+            <img src="pelvic.jpg" alt="Pelvic Floor Exercises (Kegels)">
+            <h3>Pelvic Floor Exercises (Kegels)</h3>
+            <p>Pelvic floor exercises help strengthen the muscles that support your bladder, uterus, and bowels. To perform Kegels, contract your pelvic floor muscles as if you're trying to stop the flow of urine, hold for a few seconds, then release.</p>
+            <a href="hello.html" target="_blank">Learn More</a>
+        </div>
+        <!-- Add more exercise routines -->
+    </div>
+</section>
+
+<section id="locator">
+        <div class="container pink-box2">
+            <h2> 🔍 Nearby Gynecologist Locator</h2>
+            <!-- Placeholder content for the locator -->
+            <a href="https://www.google.com/maps/search/gynecologist+near+me/@28.704709,77.1466894,13z/data=!3m1!4b1?entry=ttu" target="_blank" class="map-link">Find Now</a>
+        </div>
+    </section>
+<section id = "do-donts">
+<img src="question.png" alt="Icon">
+<div class="ph-container">
+   <h2 class="ph-center">Dos and Don'ts for Pregnant Women</h2>
+        <div class="ph-questions">
+            <div class="ph-dropdown">
+                <button class="ph-dropbtn">Select a Question</button>
+                <div class="ph-dropdown-content">
+                    <a href="#" onclick="showAnswer('avoid'); return false;">What foods should I avoid during pregnancy?</a>
+                    <a href="#" onclick="showAnswer('exercise'); return false;">Is it safe to exercise during pregnancy?</a>
+                    <a href="#" onclick="showAnswer('travel'); return false;">Can I travel while pregnant?</a>
+                    <a href="#" onclick="showAnswer('alcohol'); return false;">Can I drink alcohol during Pregnancy?</a>
+                    <a href="#" onclick="showAnswer('medications'); return false;"> Is it safe for me to take medications?</a>
+                    <a href="#" onclick="showAnswer('caffeine'); return false;"> Should I avoid caffeine?</a>
+                    <a href="#" onclick="showAnswer('heavy'); return false;">Can I lift heavy objects?</a>
+                    <a href="#" onclick="showAnswer('checkup'); return false;">Should I attend regular prenatal check-ups?</a>
+                    <a href="#" onclick="showAnswer('dye'); return false;"> Can I dye my hair?</a>
+                    <!-- Add more questions as needed -->
+                </div>
+            </div>
+            <div class="ph-ask">
+                <input type="text" id="questionInput" placeholder="Ask Your Question">
+                <button onclick="submitQuestion()">Submit</button>
+            </div>
+        </div>
+        <div id="answer"></div>
+    </div>
+</section>
+    <script>
+        function showAnswer(question) {
+            const answerDiv = document.getElementById('answer');
+            let answer = '';
+            switch(question) {
+                case 'avoid':
+                    answer = "During pregnancy, it's important to avoid certain foods such as unpasteurized dairy, raw seafood, and undercooked meats to reduce the risk of foodborne illnesses.";
+                    break;
+                case 'exercise':
+                    answer = "Yes, it's generally safe to exercise during pregnancy. However, it's important to consult with your healthcare provider before starting any exercise regimen and to avoid high-impact activities.";
+                    break;
+                case 'travel':
+                    answer = "Travel during pregnancy is generally safe, but it's important to take precautions. Avoid long flights or car rides, stay hydrated, and take breaks to stretch your legs.";
+                    break;
+                 case 'alcohol':
+                    answer = "No, it's best for pregnant women to avoid alcohol entirely to prevent any risk of fetal alcohol spectrum disorders (FASDs).";
+                    break;
+                 case 'medications':
+                    answer = "Certain medications may be safe during pregnancy, but it's crucial to consult with your healthcare provider before taking any medication, including over-the-counter drugs and supplements.";
+                    break;
+                 case 'caffeine':
+                    answer = "While moderate caffeine intake is generally considered safe during pregnancy, it's recommended to limit caffeine consumption to 200 mg per day, roughly equivalent to one 12-ounce cup of coffee.";
+                    break;
+                 case 'heavy':
+                    answer = "Pregnant women should avoid lifting heavy objects, as it can strain the back and increase the risk of injury. If lifting is necessary, it's essential to use proper lifting techniques and avoid lifting heavy objects repeatedly.";
+                    break;
+                 case 'checkup':
+                    answer = " Yes, regular prenatal check-ups are crucial for monitoring the health of both the mother and the baby throughout pregnancy. These appointments allow healthcare providers to identify any potential issues early and provide necessary care.";
+                    break;
+                 case 'dye':
+                    answer = " While some studies suggest that hair dye chemicals may be absorbed into the bloodstream in small amounts, the risks to the fetus are likely minimal when dyeing hair occasionally during pregnancy. However, it's recommended to wait until after the first trimester to dye hair and to ensure proper ventilation during the process.";
+                    break;
+                   
+                     
+                // Add more cases for additional questions
+            }
+            answerDiv.innerHTML = answer;
+        }
+
+        function submitQuestion() {
+            const questionInput = document.getElementById('questionInput').value;
+            if (questionInput.trim() !== '') {
+                document.getElementById('answer').innerHTML = "Question Submitted Successfully! You will get your answer soon.";
+                // Clear input field after submission
+                document.getElementById('questionInput').value = '';
+            } else {
+                alert('Please enter a question.');
+            }
+        }
+    </script>
+
+
+<section id="About us">
+    <div class="about-section">
+        <div class="container2">
+            <h2>About US</h2>
+            <p>Welcome to Prenatal Nurture, your trusted companion on the journey through pregnancy and motherhood. Our mission is to empower and support expecting mothers with reliable information, expert guidance, and a nurturing community every step of the way.</p>
+            <p>At Prenatal Nurture, we understand that pregnancy is a transformative experience, filled with excitement, joy, and sometimes, uncertainty. That's why we've curated a comprehensive resource hub designed to address the diverse needs and concerns of mothers-to-be.</p>
+            <p>Our team consists of passionate healthcare professionals, experienced mothers, and knowledgeable experts in various fields related to pregnancy and childbirth. With our collective expertise, we aim to provide you with the most up-to-date and evidence-based information on topics ranging from prenatal nutrition and fitness to labor and delivery preparation.</p>
+            
+            <p>Thank you for choosing Prenatal Nurture as your companion on this extraordinary journey. Together, let's embrace the magic of pregnancy and embark on the path to motherhood with confidence, knowledge, and unwavering support.</p>
+            
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Other sections for exercise, nutrition, appointments, gynecologist, do and don'ts, allergies -->
+</main>
+
+
+    <!-- Footer section -->
+<section id = "Contact us">
+    <footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Prenatal Nurture. All rights reserved. &nbsp;<a href="tel:123-456-7890">Customer Care: 123-456-7890</a> | <a href="mailto:info@prenatalnurture.com">Email: info@prenatalnurture.com</a></p>
+    </div>
+</footer>
+</section>
+
+</body>
+</html>
